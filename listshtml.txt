@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>list</title>
+</head>
+<body>
+<ol>
+<li>Anusha</li>
+<li>Harsha Vardhan</li>
+<li>Lalitha</li>
+<li>Teja Sri</li>
+<li>Ravinder</li>
+</ol>
+</body>
+</html>

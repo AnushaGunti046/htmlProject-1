@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>forms</title>
+</head>
+<body>
+<form>
+<fieldset>
+<label for="name" required>name:</label>
+<input type="text" id="name" placeholder="enter the name:" required><br><br>
+<label for="email">email:</label>
+<input type="email" id="email" placeholder="enter the email">
+</fieldset>
+<br><br>
+<fieldset>
+<legend>gender:</legend><br>
+<label for="male">male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="female">female</label>
+<input type="radio" id="female" name="gender" value="female"> 
+</fieldset>
+<br>
+<br>
+<label for="country">select country:</label>
+<select id="country" name="country">
+<option value="india">india</option>
+<option value="usa">usa</option>
+<option value="africa">africa</option>
+</select>
+<br>
+<br>
+<label for="meassage">message</label>
+<textarea id="message" name="message" rows="4" colums="10" placeholder="enter the text:"></textarea>
+<br>
+<br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
