@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Hackathon Registration Form</h2>
+    <fieldset>
+        <legend>Registration Form</legend>
+    <form method="get">
+        
+        <label for="firstName">Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Anusha" autocomplete="on" autofocus required>
+        <br>
+        <br>
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="roll" placeholder="25885A0546" required>
+        <br>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <br>
+        <br>
+        <input type="checkbox" name="skills" id="WebDevelopment" value="WebDevelopment">
+        <label for="WebDevelopment">Web Development</label>
+        <input type="checkbox" name="skills" id="cyberSecurity" value="cyberSecurity">
+        <label for="cyberSecurity">Cyber Security</label>
+        <input type="checkbox" name="skills" id="AppDevelopment" value="AppDevelopment">
+        <label for="AppDevelopment">App Development</label>
+        <br>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="8978306048" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+        <br>
+        <br>
+        <label for="country">Select Country:</label>
+        <select name="country" id="country">
+            <option value="afganistan">afganistan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Canada"> Canada</option>
+            <option value="Fiji"> Fiji</option>
+            <option value="India">India</option>
+        </select>
+        <br>
+        <br>
+        <label for="message">Suggest me some changes:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here...."></textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+        <br>
+        <br>
+        <button type="reset">Reset</button>
+    </fieldset>
+    </form>
+</body>
+</html>
