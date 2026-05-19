@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-model</title>
+    <style>
+        .container{
+            align-content:center;
+            display:grid;
+            grid-template-columns:1fr 2fr 3fr;
+            gap:20px;
+            column-gap:10px;
+            grid-template-rows:100px 200px;
+            align-item:center;
+            justify-tems:center;
+        }
+        .box{
+            background:blue;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box" >1</div>
+    <div class="box">2</div>
+   <div class="box">3</div>
+</div> 
+</body>
+</html>
