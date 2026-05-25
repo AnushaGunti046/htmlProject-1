@@ -1,0 +1,47 @@
+body{
+    background: rgb(220, 235, 255);
+
+}
+h1{
+    color:gray;
+    text-align:center;
+
+}
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+
+}
+.form-class:hover{
+    background:rgb(255,255,255);
+}
+form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    width:400px;
+    height:200px;
+
+}
+.submit{
+    padding:8px 2px;
+    color:gray;
+    background:rgb(204, 204, 208);
+    cursor:pointer;
+    width:100px;
+    border:0;
+}
+.submit:hover{
+    background:rgb(150,150,150);
+}
+.name{
+    margin-bottom:20px;
+}
+.form-class{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:rgb(250,250,250);
+}
