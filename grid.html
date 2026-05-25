@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
+    <title>Grid Layout</title>
     <style>
         .container{
             display:grid;
-            grid-template-columns:100px;
-            grid-template-rows:100px 100px 100px 100px;
-            background:yellow;
-        }
-        .container div{
-            border-width:1px;
-            border-style:solid;
-            border-color:silver;
-            display:flex;
-            background:green;
-
-            justify-content:center;
-            align-items:center;
+            grid-template-columns:repeat(3,150px);
+            grid-template-rows:repeat(3,150px);
+            color:green;
+            grid-row-gap:50px;
+            grid-column-gap:50px;
+            grid-gap:10px;
+            justify-content:space-between;
+            align-content:center;
 
         }
-            </style>
+        .container2{
+            display:grid;
+            grid-template-rows:1fr 1fr 1fr;
+            grid-template-columns:1fr 1fr 1fr;
+                }
+                #box1{
+                    grid-column-start:1;
+                    grid-column-end:4;
+                }
+                #box2{
+                    grid-row-start:2;
+                    grid-row-end:6;
+                }
+    </style>
 </head>
 <body>
-    <p>rows and columns</p>
     <div class="container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+        <div>7</div>
+    <div>8</div>
+    <div>9</div>
+
     </div>
+    <div class="container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+        <div>7</div>
+    <div>8</div>
+    <div>9</div>
+
+    </div>
+
 </body>
 </html>
