@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Transitions</title>
+<style>
+    .div{
+        width:100px;
+        height:100px;
+        background:yellow;
+        transition-duration:2s;
+        margin:50px;
+        transition-property:transform;
+        transition-timing-function:ease;
+    }
+    .div:hover{
+        background:green;
+        transform:rotate(45deg);
+        cursor:pointer;
+    }
+
+
+
+
+
+    .div1{
+        width:100px;
+        height:100px;
+        background:yellow;
+        transition-duration:2s;
+        margin:50px;
+        transition-property:transform;
+        transition-timing-function:ease-in;
+    }
+    .div1:hover{
+        background:green;
+        transform:rotate(45deg);
+        }
+        
+
+
+
+
+    .div2{
+        width:100px;
+        height:100px;
+        background:yellow;
+        transition-duration:2s;
+        margin:50px;
+        transition-property:transform;
+        transition-timing-function:ease-out;
+    }
+    .div2:hover{
+        background:green;
+        transform:rotate(45deg);
+        }
+
+
+
+
+
+    .div3{
+        width:100px;
+        height:100px;
+        background:yellow;
+        transition-duration:2s;
+        margin:50px;
+        transition-property:transform;
+        transition-timing-function:linear;
+    }
+    .div3:hover{
+        background:green;
+        transform:rotate(45deg);
+        }
+</style>
+</head>
+<body>
+    <div class="div">ease</div>
+        <div class="div1">ease-in</div>
+        <div class="div2">out</div>
+          <div class="div3">linear</div>
+
+
+</body>
+</html>
