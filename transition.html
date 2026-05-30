@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-Transition</title>
+    <style>
+    .div1{
+        width:100px;
+        height:100px;
+        margin:100px;
+        background:green; 
+       transition-property:transform,background;
+       transition-duration:10s;
+    }
+    .div1:hover{
+        transform:translate(50px);
+        background:yellow;
+    }
+
+     .div2{
+        width:100px;
+        height:100px;
+        margin:100px;
+        background:green; 
+       transition-property:transform,background;
+       transition-duration:10s;
+    }
+    .div2:hover{
+        transform:skew(50deg);
+        background:yellow;
+    }
+
+
+     .div3{
+        width:100px;
+        height:100px;
+        margin:100px;
+        background:green; 
+       transition-property:transform,background;
+       transition-duration:10s;
+    }
+    .div3:hover{
+        transform:scale(2);
+        background:yellow;
+    }
+
+
+
+     .div4{
+        width:100px;
+        height:100px;
+        margin:100px;
+        background:green; 
+       transition-property:transform,background;
+       transition-duration:10s;
+    }
+    .div4:hover{
+        transform:rotate(50deg);
+        background:yellow;
+    }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>
