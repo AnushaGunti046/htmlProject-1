@@ -3,77 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-clone</title>
+    <title>netflix-clone</title>
     <style>
-        .navi{
-            display:flex;
-            justify-content: space-between;
-        }
         body{
             background:black;
-            line-height:30px;
+        }
+        nav{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+            padding:10px 20px;
         }
         .logo{
-        text-transform:uppercase;
-        color:rgb(255, 166, 0);
-        font-weight:900;
-        letter-spacing:1.5px;
-        font-size:30px;
+            color:red;
+            text-transform:uppercase;
+            font-weight:500;
+            letter-spacing:1.2px;
+            font-size:40px;
         }
-       
-        .box{
+        .navi-left button{
+            background:red;
+            color:white;
+            border-radius:7px;
+            cursor:pointer;
+            border:0px;
+            padding:12px;
+            transition:background 0.5s ease;
+        }
+        .navi-left select{
+             padding:12px;
+        }
+        .navi-left{
             display:flex;
+            flex-direction:row;
+            gap:40px;
+    
+        }
+        .navi-left button:hover{
+            background:rgb(190, 51, 51);
+        }
+        .content{
+            color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            line-height:40px;
+            height:80vh;
         }
         .info{
-            
+            font-weight:700;
+            font-size:30px;
+
+        }
+        .payment{
+            font-weight:500;
+            font-size:20px;
+        }
+        .box{
+            display:flex;
+            gap:10px;
             align-items:center;
-            color:rgb(225, 183, 183);
         }
-        .get-start{
+        .email input{
+            padding:20px;
+            border:1px solid rgb(204, 190, 190);
             color:white;
-            background:rgb(255,100,100);
+            background:black;
+            border-radius:2px;
+            flex:1;
+            min-width:200px;
         }
-        .get-start:hover{
-            background:rgb(255,150,100);
+        .btn button{
+            color:white;
+            background:red;
+            padding:20px;
+            border:none;
+            border-radius:10px;
+            font-size:20px;
+            white-space:nowrap;
+            transition:05s ease;
         }
-        
-        </style>
+         .btn button:hover{
+            background:rgb(209, 58, 58);
+            color:white;
+            cursor:pointer;
+
+        }
+
+    </style>
 </head>
 <body>
-    <div class="navi">
-    <div class="logo">
-        netflix
+    <nav>
+        <div class="logo">netflix</div>
+
+
+        <div class="navi-left">
+            <select>
+                <option value="english" selected>English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            <button>Sign In</button>
+        </div>
+    </nav>
+
+
+
+    <div class="content">
+        <div class="info">
+        Unlimited movies,shows,and more
     </div>
-
-    <div class="nav-left">
-        <label for="language" name="language">English</label>
-        <select id="language" name="language">
-            <option value="">English</option>
-            <option value="">Telugu</option>
-        </select>
+    <div class="payment">
+        Starts at ₹149. Cancel at any time.
     </div>
+    <div class="membership">
+        Ready to watch? Enter your email to create or restart your membership.
     </div>
-
-    <div class="info">
-    <div class="main">Unlimited movies,shows,and more</div>
-    <div class="payment">Starts at ₹149. Cancel at any time.</div>
-    <div class="details">Ready to watch? Enter your email to create or restart your membership.</div>
-
-
     <div class="box">
         <div class="email">
-            
-            <input type="email" placeholder="Email address" autocomplte autofocus>
-            
-        </div>
-       
-        <div class="get-start">
-             
-            <button type="submit" placeholder="Get Started">Get Started</button>
-            
-        </div>
-    </div>
-    </div>
+            <input type="email" placeholder="Email address" autofocus autocomplete="on" required>
 
+        </div>
+        <div class="btn">
+            <button>Get Started</button>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
