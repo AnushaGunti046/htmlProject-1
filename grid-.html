@@ -1,27 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid</title>
-    <style>
-        .container{
-            display:grid;
-            background:yellow;
-            
-        }
-        .container div{
-            gap:10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-    </div>
-</body>
-</html>
+from google import genai
+from dotenv import load_dotenv
+load_dotenv()
+import os
+ 
+client=genai.Client(api_key=os.getenv("GEMINI_KEY"))
+ 
+from pydantic import BaseModel
+from typing import List
+ 
+class Question(BaseModel):
+    Question_number:int
+    Question_body:str
+    Question_options:str
+    Corrent_ans:int
+ 
+class Question_list(BaseModel):
+    All_questions:List[Question]
+ 
+system_inst="""
+You are an Question Answer Assistant.
+your job it to create Multiple choice questions for the topic provided in the provided format
+"""
+res=client.models.generate_content(model="gemma-4-31b-it",contents="Give me 5 questions on Generative ai",
+                                   config=genai.types.GenerateContentConfig(response_mime_type='application/json',response_schema=Question_list))
+ 
